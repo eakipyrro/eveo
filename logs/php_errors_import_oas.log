@@ -1,0 +1,12 @@
+[15-Nov-2025 08:02:06 Europe/Copenhagen] HIT import_oas.php @ 2025-11-15T08:02:06+01:00 __DIR__=/home/fissifi/pyrro.fi/eveo
+[15-Nov-2025 08:10:28 Europe/Copenhagen] HIT import_oas.php @ 2025-11-15T08:10:28+01:00 __DIR__=/home/fissifi/pyrro.fi/eveo
+[15-Nov-2025 10:50:05 Europe/Copenhagen] HIT import_oas.php @ 2025-11-15T10:50:05+01:00 __DIR__=/home/fissifi/pyrro.fi/eveo
+[15-Nov-2025 10:50:21 Europe/Copenhagen] HIT import_oas.php @ 2025-11-15T10:50:21+01:00 __DIR__=/home/fissifi/pyrro.fi/eveo
+[15-Nov-2025 10:50:25 Europe/Copenhagen] HIT import_oas.php @ 2025-11-15T10:50:25+01:00 __DIR__=/home/fissifi/pyrro.fi/eveo
+[16-Nov-2025 18:36:44 Europe/Copenhagen] PHP Fatal error:  Uncaught Error: Failed opening required '/home/fissifi/pyrro.fi/eveo/include/auth.php' (include_path='.:/opt/cpanel/ea-php83/root/usr/share/pear') in /home/fissifi/pyrro.fi/eveo/import_oas.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/fissifi/pyrro.fi/eveo/import_oas.php on line 71
+[30-Nov-2025 11:54:34 Europe/Helsinki] PHP Parse error:  Unclosed '{' on line 605 in /home/fissifi/pyrro.fi/eveo/include/importers/oas_lib.php on line 813
+[02-Dec-2025 08:11:42 Europe/Helsinki] PHP Parse error:  Unclosed '{' on line 605 in /home/fissifi/pyrro.fi/eveo/include/importers/oas_lib.php on line 813
+[02-Dec-2025 19:03:44 Europe/Helsinki] PHP Parse error:  Unclosed '{' on line 605 in /home/fissifi/pyrro.fi/eveo/include/importers/oas_lib.php on line 813

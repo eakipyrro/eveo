@@ -1,0 +1,28 @@
+[30-Oct-2025 18:39:57 Europe/Copenhagen] PHP Fatal error:  Cannot redeclare h() (previously declared in /home/fissifi/pyrro.fi/eveo/admin/admin_index.php:20) in /home/fissifi/pyrro.fi/eveo/include/auth.php on line 11
+[30-Oct-2025 18:56:26 Europe/Copenhagen] PHP Fatal error:  Cannot redeclare h() (previously declared in /home/fissifi/pyrro.fi/eveo/admin/admin_index.php:20) in /home/fissifi/pyrro.fi/eveo/include/auth.php on line 11
+[30-Oct-2025 19:01:10 Europe/Copenhagen] PHP Fatal error:  Cannot redeclare h() (previously declared in /home/fissifi/pyrro.fi/eveo/admin/admin_audit.php:13) in /home/fissifi/pyrro.fi/eveo/include/auth.php on line 11
+[30-Oct-2025 20:03:50 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: h(): Argument #1 ($s) must be of type string, null given, called in /home/fissifi/pyrro.fi/eveo/admin/admin_users.php on line 304 and defined in /home/fissifi/pyrro.fi/eveo/include/auth.php:11
+Stack trace:
+#0 /home/fissifi/pyrro.fi/eveo/admin/admin_users.php(304): h(NULL)
+#1 {main}
+  thrown in /home/fissifi/pyrro.fi/eveo/include/auth.php on line 11
+[30-Oct-2025 20:15:56 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: h(): Argument #1 ($s) must be of type string, null given, called in /home/fissifi/pyrro.fi/eveo/admin/admin_users.php on line 304 and defined in /home/fissifi/pyrro.fi/eveo/include/auth.php:11
+Stack trace:
+#0 /home/fissifi/pyrro.fi/eveo/admin/admin_users.php(304): h(NULL)
+#1 {main}
+  thrown in /home/fissifi/pyrro.fi/eveo/include/auth.php on line 11
+[31-Oct-2025 20:32:53 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: h(): Argument #1 ($s) must be of type string, null given, called in /home/fissifi/pyrro.fi/eveo/admin/admin_users.php on line 304 and defined in /home/fissifi/pyrro.fi/eveo/include/auth.php:11
+Stack trace:
+#0 /home/fissifi/pyrro.fi/eveo/admin/admin_users.php(304): h(NULL)
+#1 {main}
+  thrown in /home/fissifi/pyrro.fi/eveo/include/auth.php on line 11
+[31-Oct-2025 20:33:59 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: h(): Argument #1 ($s) must be of type string, null given, called in /home/fissifi/pyrro.fi/eveo/admin/admin_users.php on line 304 and defined in /home/fissifi/pyrro.fi/eveo/include/auth.php:11
+Stack trace:
+#0 /home/fissifi/pyrro.fi/eveo/admin/admin_users.php(304): h(NULL)
+#1 {main}
+  thrown in /home/fissifi/pyrro.fi/eveo/include/auth.php on line 11
+[31-Oct-2025 20:34:06 Europe/Helsinki] PHP Fatal error:  Uncaught TypeError: h(): Argument #1 ($s) must be of type string, null given, called in /home/fissifi/pyrro.fi/eveo/admin/admin_users.php on line 304 and defined in /home/fissifi/pyrro.fi/eveo/include/auth.php:11
+Stack trace:
+#0 /home/fissifi/pyrro.fi/eveo/admin/admin_users.php(304): h(NULL)
+#1 {main}
+  thrown in /home/fissifi/pyrro.fi/eveo/include/auth.php on line 11

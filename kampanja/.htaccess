@@ -1,0 +1,60 @@
+# Myyntikampanja .htaccess
+
+# Estä hakemistojen listaus
+Options -Indexes
+
+# Suojaa config.php lukemiselta
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Estä pääsy .git-tiedostoihin
+<FilesMatch "^\.git">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Suojaa SQL-tiedostot
+<FilesMatch "\.(sql|db)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# PHP-tiedostojen suojaus uploads-kansiossa (estää PHP-koodin suoritus)
+<Directory "uploads">
+    php_flag engine off
+    AddType application/octet-stream .php .php3 .php4 .php5 .php7 .phtml
+</Directory>
+
+# Pakota HTTPS (poista kommentti jos haluat ottaa käyttöön)
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Estä tiedostojen lataus väärillä laajennuksilla
+# <FilesMatch "\.(php|php3|php4|php5|phtml|pl|py|jsp|asp|htm|shtml|sh|cgi)$">
+#     Order allow,deny
+#     Deny from all
+# </FilesMatch>
+
+# Suojaa admin-sivut HTTP Basic Auth:lla (valinnainen)
+# <FilesMatch "(admin|campaign-detail|email-settings)\.php$">
+#     AuthType Basic
+#     AuthName "Admin Area"
+#     AuthUserFile /full/path/to/.htpasswd
+#     Require valid-user
+# </FilesMatch>
+
+# Lisää turvallisuusotsikoita
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Rajoita tiedostojen latauksen kokoa (muuta tarvittaessa)
+php_value upload_max_filesize 1024M
+php_value post_max_size 1024M
+php_value max_execution_time 300
+php_value max_input_time 300
